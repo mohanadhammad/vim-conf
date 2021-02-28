@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -25,6 +25,7 @@ Plugin 'morhetz/gruvbox'
 " Development
 Plugin 'ilyachur/cmake4vim'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 " OSX stupid backspace fix
 set backspace=indent,eol,start

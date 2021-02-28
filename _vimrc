@@ -10,7 +10,7 @@ set bs=2        	" make backspace behave like normal again "
 " ===================================================
 " ==== Sourcing the plugins file ====================
 " ===================================================
-so ~/.vim/plugins.vim
+so ~/.config/nvim/plugins.vim
 
 
 " ===================================================
@@ -128,4 +128,9 @@ vnoremap > >gv                      " better indentation left  "
 nmap <c-g> :CMake<CR>
 nmap <c-b> :CMakeBuild<CR>
 
-
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
