@@ -28,6 +28,22 @@ else
   set signcolumn=yes
 endif
 
+" ===================================================
+" ==== Coc Extensions ===============================
+" ===================================================
+let g:coc_global_extensions = [
+            \     'coc-json'
+            \   , 'coc-git'
+            \   , 'coc-cmake'
+            \   , 'coc-clangd'
+            \   , 'coc-xml'
+            \   , 'coc-json'
+            \   , 'coc-python'
+            \   , 'coc-pyright'
+            \   , 'coc-markdownlint'
+            \   , 'coc-html'
+            \   , 'coc-sh']
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.

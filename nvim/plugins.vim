@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " ====================================================================
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-dispatch'
 
