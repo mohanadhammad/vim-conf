@@ -10,7 +10,8 @@ set bs=2        	" make backspace behave like normal again "
 " ===================================================
 " ==== Sourcing the plugins file ====================
 " ===================================================
-so ~/.config/nvim/plugins.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/coc.vim
 
 
 " ===================================================
@@ -82,6 +83,11 @@ let g:spacegray_italicize_comments = 1
 
 
 
+" ===================================================
+" ==== Coc Extensions ===============================
+" ===================================================
+let g:coc_global_extensions = {'coc-json', 'coc-git', 'coc-cmake' , 'coc-clangd'}
+
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
 """""""""""""""""""""""""""""""""""""
@@ -128,9 +134,3 @@ vnoremap > >gv                      " better indentation left  "
 nmap <c-g> :CMake<CR>
 nmap <c-b> :CMakeBuild<CR>
 
-" Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif

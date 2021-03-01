@@ -1,6 +1,13 @@
 # vim-conf
 This a - ready to use - configuration for vim to be used as an IDE
 
+## Prerequisits
+
+- Neovim version > 0.3.0
+- Clangd should be installed. (https://clangd.llvm.org/installation.html)
+    - Make sure its installed correctly by checking the version.
+    - This is necessary for coc-clangd to work proparly.
+
 ## Vim
 
 After cloning this repo to your machine, you will need to change paths in
@@ -30,4 +37,5 @@ different. In that case the commands you should run after cloning the repo are:
 cp _vimrc ~/.config/nvim
 cp -r _vim ~/.config/init.vim
 ```
+
 
