@@ -7,6 +7,8 @@ set encoding=utf8
 set mouse=a     	" on OSX press. ALT and click "
 set bs=2        	" make backspace behave like normal again "
 
+filetype plugin on
+
 " ===================================================
 " ==== Sourcing the plugins file ====================
 " ===================================================
@@ -160,3 +162,12 @@ let g:NERDToggleCheckAllLines = 1
 
 " NERDComToggleComment
 map <C-F5> <Leader>c<space>
+
+
+"=====================================
+"============ cmake4vim
+"=====================================
+let g:cmake_build_dir = "build"
+
+
+
