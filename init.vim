@@ -139,14 +139,17 @@ nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :tabm -1<CR>
 nnoremap <silent> <A-Right> :tabm +1<CR>
 
-let notabs = 0
-nnoremap <silent> <F8> :let notabs=!notabs<Bar>:if notabs<Bar>:tabo<Bar>:else<Bar>:tab ball<Bar>:tabn<Bar>:endif<CR>
+"let notabs = 0
+"nnoremap <silent> <F8> :let notabs=!notabs<Bar>:if notabs<Bar>:tabo<Bar>:else<Bar>:tab ball<Bar>:tabn<Bar>:endif<CR>
 
 
 " NerdTree shortcuts
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-t> :NERDTreeFocus<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" NerdTree Tabs shortcuts
+nnoremap <C-n> :NERDTreeTabsToggle<CR>
+
 
 "=====================================
 "============ NerdCommenter
@@ -187,7 +190,7 @@ map <C-F5> <Leader>c<space>
 "=====================================
 
 " Open the existing NERDTree on each new tab.
-autocmd BufWinEnter * silent NERDTreeMirror
+"autocmd BufWinEnter * silent NERDTreeMirror
 
 "=====================================
 "============ cmake4vim
