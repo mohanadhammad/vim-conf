@@ -129,6 +129,9 @@ vnoremap > >gv                      " better indentation left  "
 nmap <c-g> :CMake<CR>
 nmap <c-b> :CMakeBuild<CR>
 
+" fzf mappings
+map ; :Files<CR>
+map <S-TAB> :Buffers<CR>
 
 "=====================================
 "============ NerdCommenter
