@@ -133,6 +133,21 @@ nmap <c-b> :CMakeBuild<CR>
 map ; :Files<CR>
 map <S-TAB> :Buffers<CR>
 
+" Tabs shortcuts
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <silent> <A-Left> :tabm -1<CR>
+nnoremap <silent> <A-Right> :tabm +1<CR>
+
+let notabs = 0
+nnoremap <silent> <F8> :let notabs=!notabs<Bar>:if notabs<Bar>:tabo<Bar>:else<Bar>:tab ball<Bar>:tabn<Bar>:endif<CR>
+
+
+" NerdTree shortcuts
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 "=====================================
 "============ NerdCommenter
 "=====================================
@@ -166,6 +181,13 @@ let g:NERDToggleCheckAllLines = 1
 " NERDComToggleComment
 map <C-F5> <Leader>c<space>
 
+
+"=====================================
+"============ NerdTree
+"=====================================
+
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * silent NERDTreeMirror
 
 "=====================================
 "============ cmake4vim
