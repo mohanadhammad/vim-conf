@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-"Plugin 'preservim/nerdcommenter'
+Plugin 'preservim/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-dispatch'
 Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }

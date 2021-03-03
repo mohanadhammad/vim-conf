@@ -15,7 +15,6 @@ filetype plugin on
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/coc.vim
 
-
 " ===================================================
 " ==== Line numbering and display rules =============
 " ===================================================
@@ -130,8 +129,8 @@ nmap <c-g> :CMake<CR>
 nmap <c-b> :CMakeBuild<CR>
 
 " fzf mappings
-map ; :Files<CR>
-map <S-TAB> :Buffers<CR>
+map <S-TAB> :Files<CR>
+map ; :Buffers<CR>
 
 " Tabs shortcuts
 nnoremap <C-Left> :tabprevious<CR>
@@ -150,6 +149,8 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " NerdTree Tabs shortcuts
 nnoremap <C-n> :NERDTreeTabsToggle<CR>
 
+" NERDComToggleComment
+map <C-y> <plug>NERDCommenterToggle
 
 "=====================================
 "============ NerdCommenter
@@ -180,10 +181,6 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
-
-" NERDComToggleComment
-map <C-F5> <Leader>c<space>
-
 
 "=====================================
 "============ NerdTree
