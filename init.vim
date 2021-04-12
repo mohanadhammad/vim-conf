@@ -6,6 +6,7 @@ set nowrap
 set encoding=utf8
 set mouse=a     	" on OSX press. ALT and click "
 set bs=2        	" make backspace behave like normal again "
+set autoread<
 
 filetype plugin on
 
@@ -151,6 +152,15 @@ nnoremap <C-n> :NERDTreeTabsToggle<CR>
 
 " NERDComToggleComment
 map <C-y> <plug>NERDCommenterToggle
+
+" for autoread
+map <F5> :checktime<CR>
+map! <F5> <C-O>:checktime<CR>
+
+" copy (write) highlighted text to .vimbuffer
+vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+" paste from buffer
+map <C-v> :r ~/.vimbuffer<CR>
 
 "=====================================
 "============ NerdCommenter
